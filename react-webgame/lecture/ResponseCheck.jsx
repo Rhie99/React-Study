@@ -26,7 +26,7 @@ const ResponseCheck = () => {
             setState("waiting");
             setMessage("클릭해서 시작해~");
             setResult((prevResult) => {
-                return [...prevResult.result, endTime - startTime];
+                return [...prevResult, endTime.current - startTime.current];
             });
         };
     }
